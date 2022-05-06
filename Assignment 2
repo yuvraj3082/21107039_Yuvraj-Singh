@@ -1,0 +1,369 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled8.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "source": [
+        "#Program for Question 1\n",
+        "#\"Pyhton is a case sensitive language\" \n",
+        "#1(a)\n",
+        "print(\"Length of the given statement is-\")\n",
+        "a=\"Python is a case sensitive language\"\n",
+        "len(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gNondkH9QUnS",
+        "outputId": "3ab4377b-6bac-430b-92f0-8179d8490262"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Length of the given statement is-\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "35"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1(b)\n",
+        "a=\"Python is a case sensitive language\"\n",
+        "b=a[::-1]\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "id": "D4CkzjchQYi1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "454417c5-407b-44ab-df26-55c8a736b274"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "egaugnal evitisnes esac a si nohtyP\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1(c)\n",
+        "a=\"Python is a case sensitive language\"\n",
+        "print(a[10:27])\n"
+      ],
+      "metadata": {
+        "id": "TX3u9BOmQbAZ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "97686436-62b2-4d68-ab1c-fce4a4fe2af5"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a case sensitive \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1(d)\n",
+        "a=\"Python is a case sensitive language\"\n",
+        "print(a.replace('a case sensitive','object oriented'))"
+      ],
+      "metadata": {
+        "id": "N-xoQvZ3QcmO",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "702f1826-9077-471e-c0bc-529762e609e7"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python is object oriented language\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1(e)\n",
+        "a=\"Python is a case sensitive language\"\n",
+        "result=a.find(\"a\")\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "id": "Dvuu73VAQegn",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3614667b-4718-4d35-a31a-af3fecc76826"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1(f)\n",
+        "a=\"Python is a case sensitive language\"\n",
+        "print(a.replace(' ',''))"
+      ],
+      "metadata": {
+        "id": "1fZV9KYrQgDj",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "47f8f899-a23c-4f04-99b3-0a6caedc86c9"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Pythonisacasesensitivelanguage\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Program for question 2\n",
+        "#SID, CGPA, Department name as variables\n",
+        "name=\"Yuvraj\"\n",
+        "branch=\"Mechanical\"\n",
+        "SID=\"21107039\"\n",
+        "CGPA=\"8.8\"\n",
+        "print(\"Hey, {n} here! \\nMY SID is {sid} \\nI am from {dept} department and my CGPA is {cg}\".format(n=name, sid=SID, dept=branch, cg=CGPA))\n"
+      ],
+      "metadata": {
+        "id": "yKLk8kX4QiBW",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "08124ad7-9c05-4f03-dd6e-62324db4ac86"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hey, Yuvraj here! \n",
+            "MY SID is 21107039 \n",
+            "I am from Mechanical department and my CGPA is 8.8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Program for question 3\n",
+        "#Using Bitwise Operators\n",
+        "a=56\n",
+        "b=10\n",
+        "print(\"a&b\", a&b)\n",
+        "print(\"a|b\", a|b)\n",
+        "print(\"a^b\", a^b)\n",
+        "print(\"Shifitng both a and b to the left with 2 bits-\" )\n",
+        "print(\"a>\",a<<2)\n",
+        "print(\"b>\",b<<2)\n",
+        "print(\"Shifting a right by two bits and b by 4 bits-\")\n",
+        "print(\"a>\",a>>2)\n",
+        "print(\"b>\",b>>4)"
+      ],
+      "metadata": {
+        "id": "qdGuL4nuQjgZ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "074cd61b-0c55-436f-93f0-d88d3072dc4d"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a&b 8\n",
+            "a|b 58\n",
+            "a^b 50\n",
+            "Shifitng both a and b to the left with 2 bits-\n",
+            "a> 224\n",
+            "b> 40\n",
+            "Shifting a right by two bits and b by 4 bits-\n",
+            "a> 14\n",
+            "b> 0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Program for Question 4\n",
+        "#Checking if the word \"name\" is present in input sentence\n",
+        "word=input(\" Write anything here-\")\n",
+        "if(\"name\" in word):print(\"yes\")\n",
+        "else: print(\"no\")"
+      ],
+      "metadata": {
+        "id": "KITUKxvvQmjM",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a4552683-4da2-4b62-9508-dfd33adab2a2"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Write anything here-my name is yuvraj\n",
+            "yes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "1#Program for Question 5\n",
+        "#Checking if the three input lengths can make a triangle\n",
+        "side_1=(input(\"Enter lenght of first side\"))\n",
+        "side_2=(input(\"Enter lenght of second side\"))\n",
+        "side_3 =input(\"Enter lenght of third side\")\n",
+        "side_1=int(side_1)\n",
+        "side_2=int(side_2)\n",
+        "side_3=int(side_3)\n",
+        "if(side_1==0 or side_2==0 or side_3==0):\n",
+        "#As none of the sides of a traingle can be 0 \n",
+        "   print(\"NO\")\n",
+        "elif(side_1<side_2+side_3 and side_2<side_1+side_3 and side_3<side_1+side_2):\n",
+        "#As in a triangle sum of any two side is greater than the third side\n",
+        "   print(\"YES\")\n",
+        "elif(side_1<0 or side_2<0 or side_3<0):\n",
+        "#As a side can't have negative length\n",
+        "  print(\"NO\")\n",
+        "else:\n",
+        "   print(\"NO \")"
+      ],
+      "metadata": {
+        "id": "ePmQXRNPQqGR",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "43e65a20-bab7-4aba-aedb-0cfdd7a4f300"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter lenght of first side12\n",
+            "Enter lenght of second side3\n",
+            "Enter lenght of third side10\n",
+            "YES\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Program for question 6\n",
+        "#Calculating the number of bits to be flipped to convert 'a' to 'b'\n",
+        "a=int(input(\"Enter any integer\"))\n",
+        "b=int(input(\"Enter any integer\"))\n",
+        "c=bin(a^b) \n",
+        "print(c)\n",
+        "\n",
+        "count=0\n",
+        "for i in c[2::]:\n",
+        " if i==\"1\":\n",
+        "  count=count+1\n",
+        "  #as the number of different bits is the number of bits to be flipped\n",
+        "print(count)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nZIMGWmOOi0I",
+        "outputId": "7fb4a6a5-5a06-4c9e-ec11-fbf6a3906720"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter any integer123\n",
+            "Enter any integer224\n",
+            "0b10011011\n",
+            "5\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
